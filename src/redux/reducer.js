@@ -1,9 +1,9 @@
 import Actions from "./action.types";
-import Jen from "../6.png"
-import Ell from "../2.png"
-import Ste from "../3.png"
-import Chr from "../4.png"
-import Mat from "../5.png"
+import Jen from "../assets/6.png"
+import Ell from "../assets/2.png"
+import Ste from "../assets/3.png"
+import Chr from "../assets/4.png"
+import Mat from "../assets/5.png"
 
 const INITIAL_STATE = {
   users: [

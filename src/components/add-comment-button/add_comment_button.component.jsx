@@ -1,5 +1,5 @@
 import React from "react";
-import createIcon from "../../create-icon.png";
+import createIcon from "../../assets/create-icon.png";
 import "./add_comment_button.styles.scss"
 
 export default function AddCommentButton({addComment,setShowReplyTextBox, handleAddReply}) {

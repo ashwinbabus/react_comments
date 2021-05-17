@@ -7,7 +7,7 @@ import "./container.styles.scss";
 import AddCommentButton from "../add-comment-button/add_comment_button.component";
 import Comment from "../comment/comment.component";
 import Reply from "../Reply/reply.component";
-import DropDown from "../../dropdown.png";
+import DropDown from "../../assets/dropdown.png";
 
 export default function Container() {
   const users = useSelector((state) => state.users);
