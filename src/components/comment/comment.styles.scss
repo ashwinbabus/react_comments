@@ -1,0 +1,46 @@
+.comment {
+  &__container {
+    .user__image {
+      height: 40px;
+      width: 40px;
+      margin-right: 16px;
+    }
+    display: flex;
+    margin: 20px 0px;
+  }
+
+  &__info {
+    width: 100%;
+  }
+
+  &__user {
+    display: flex;
+    align-items: baseline;
+    &__name {
+      margin-right: 5px;
+    }
+    .time {
+      font-size: 14px;
+      color: #a7a7a7;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  &__reply {
+    font-size: 14px;
+    color: #a7a7a7;
+  }
+
+  &__reply:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.reply{
+    background-color: brown;
+}

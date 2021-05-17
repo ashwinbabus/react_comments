@@ -1,0 +1,32 @@
+@mixin flexalign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.addcomment {
+  display: flex;
+  width: 150px;
+  height: 38px;
+  margin-top: 12px;
+  cursor: pointer;
+
+  &__image {
+    @include flexalign();
+    background-color: #297fc7;
+    width: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  &__text {
+    @include flexalign();
+    background-color: #2c85d0;
+    width: 110px;
+    padding-bottom: 5px;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
