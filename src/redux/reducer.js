@@ -37,7 +37,7 @@ const INITIAL_STATE = {
   current_user: {
     uid: "user_001",
     name: "Jenny Hess",
-    pic: "Jen",
+    pic: Jen,
   },
 
   comments: [],
