@@ -1,9 +1,9 @@
 import Actions from "./action.types";
-import Jen from "../assets/6.png"
-import Ell from "../assets/2.png"
-import Ste from "../assets/3.png"
-import Chr from "../assets/4.png"
-import Mat from "../assets/5.png"
+import Jen from "../assets/6.png";
+import Ell from "../assets/2.png";
+import Ste from "../assets/3.png";
+import Chr from "../assets/4.png";
+import Mat from "../assets/5.png";
 
 const INITIAL_STATE = {
   users: [
@@ -50,12 +50,18 @@ const reducer = (state = INITIAL_STATE, action) => {
         ...state,
         comments: [...state.comments, action.comment],
       };
-    
-    case Actions.SET_CURR_USER :
+
+    case Actions.SET_CURR_USER:
       return {
         ...state,
-        current_user : action.user
-      }
+        current_user: action.user,
+      };
+
+    case Actions.DELETE_COMMENT:
+      return {
+        ...state,
+        comments: state.comments.filter(comment => comment.cid !== action.cid),
+      };
 
     default:
       return {

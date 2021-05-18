@@ -37,9 +37,20 @@ export default function Comment({ comment }) {
     setReplyText("");
   };
 
+  const handleDelete = (uid) => {
+    if(currUser.uid === uid){
+      dispatch({
+        type : Actions.DELETE_COMMENT,
+        cid
+      })
+    } else {
+      alert("You are not allowed to delete");
+    }
+  }
+
   return (
     <div className="comment__container">
-      <img src={user.pic} alt="" className="user__image" />
+      <img src={user.pic} alt="avatar" className="user__image" />
 
       <div className="comment__info">
         <div className="comment__user">
@@ -50,12 +61,20 @@ export default function Comment({ comment }) {
         <p className="comment__text">{text}</p>
 
         <div className="reply__container">
-          <p
-            className="comment__reply"
-            onClick={() => setShowReplyTextBox(!showReplyTextBox)}
-          >
-            Reply
-          </p>
+          <div className="reply__actions">
+            <p
+              className="comment__reply"
+              onClick={() => setShowReplyTextBox(!showReplyTextBox)}
+            >
+              Reply
+            </p>
+            <p
+              className = "comment__delete"
+              onClick={() => handleDelete(user.uid)}
+            >
+              Delete
+            </p>
+          </div>
 
           {showReplyTextBox && (
             <div className="reply__input">

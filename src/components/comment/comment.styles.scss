@@ -7,6 +7,10 @@
     }
     display: flex;
     margin: 20px 0px;
+
+    .reply__actions {
+      display: flex;
+    }
   }
 
   &__info {
@@ -30,17 +34,22 @@
     margin-bottom: 2px;
   }
 
-  &__reply {
+  &__reply,
+  &__delete {
     font-size: 14px;
     color: #a7a7a7;
+    margin-right: 10px;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 
-  &__reply:hover {
-    text-decoration: underline;
-    cursor: pointer;
+  &__delete{
+    color: rgb(228, 78, 78);
   }
 }
 
-.reply{
-    background-color: brown;
+.reply {
+  background-color: brown;
 }

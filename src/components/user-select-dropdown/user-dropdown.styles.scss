@@ -1,0 +1,43 @@
+.select__user {
+    width: 95%;
+    border: 1px solid #60a5fa;
+    min-height: 50px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+    background-color: white;
+
+    .select {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .select__dropdown {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 10px 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+      }
+      z-index: 5;
+
+      .select__userimg {
+        height: 30px;
+        width: 30px;
+        margin-right: 5px;
+      }
+    }
+  }

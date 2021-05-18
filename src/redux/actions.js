@@ -11,3 +11,7 @@ export const setCurrUser = user => ({
     user
 })
 
+export const deleteComment = cid => ({
+    type : Actions.DELETE_COMMENT,
+    cid
+})
