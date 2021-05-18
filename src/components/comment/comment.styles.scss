@@ -30,8 +30,12 @@
   }
 
   &__text {
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 2px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    width: 90%;
   }
 
   &__reply,
@@ -45,7 +49,7 @@
     }
   }
 
-  &__delete{
+  &__delete {
     color: rgb(228, 78, 78);
   }
 }
