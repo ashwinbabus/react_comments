@@ -1,3 +1,14 @@
+# About
+A simple react-app (no backend) that demonstrates nested comments feature. 
+
+# Features 
+- Hide/show comments.
+- Delete comments.
+- Reply to any comment.
+
+# Website link 
+https://hardcore-cray-d3cab1.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
